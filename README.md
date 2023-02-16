@@ -5,18 +5,18 @@ This is the CV modified from [Xu Cheng's template](https://github.com/xu-cheng/c
 ## Environment
 
 - TeXstudio 4.3.1 + MiKTeX 23.1 + MiKTeX-LuaTeX 1.16.0
-- Font: [Noto Serif SC](https://fonts.google.com/noto/specimen/Noto+Serif+SC)
-- Font: [Noto Serif TC](https://fonts.google.com/noto/specimen/Noto+Serif+TC)
-- Font: [Noto Sans SC](https://fonts.google.com/noto/specimen/Noto+Sans+SC)
-- Font: [Noto Sans TC](https://fonts.google.com/noto/specimen/Noto+Sans+TC)
+- Font: [Noto Serif SC](https://fonts.google.com/noto/specimen/Noto+Serif+SC) for simplified chinese
+- Font: [Noto Serif TC](https://fonts.google.com/noto/specimen/Noto+Serif+TC) for traditional chinese
+- Font: [Noto Sans SC](https://fonts.google.com/noto/specimen/Noto+Sans+SC) for simplified chinese
+- Font: [Noto Sans TC](https://fonts.google.com/noto/specimen/Noto+Sans+TC) for traditional chinese
 
 ## Compile
 
-Please use LuaTex to compile and it is the only compiler that works for me
+Please use `LuaTex` to compile and it is the only compiler that works for me
 
 ## Known Issues
 
-This cannot be compiled using PdfTex of XeTex.
+This cannot be compiled using `PdfTex` of `XeTex`.
 
 Using XeTex, it seems the "chinese-traditional" is not recognizable.
 ```
