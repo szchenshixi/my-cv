@@ -2,6 +2,10 @@
 
 This is the CV modified from [Xu Cheng's template](https://github.com/xu-cheng/cv)
 
+Download the [English version (2 pages)](./[2%20page(s)]%20shixi.chen.cv.pdf)
+
+Download the [Chinese version (2 pages)](./[2%20page(s)]%20簡歷--陳世希.pdf)
+
 ## Environment
 
 - TeXstudio 4.3.1 + MiKTeX 23.1 + MiKTeX-LuaTeX 1.16.0
