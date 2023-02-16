@@ -1,0 +1,228 @@
+\documentclass{mycv}
+%------------------------------------------------------------
+%                  Start of Font Adaptation
+%------------------------------------------------------------
+% [Ref] https://tex.stackexchange.com/questions/483605/creating-a-document-with-mixed-languages
+\ifluatex
+\usepackage[bidi=basic]{babel}
+\usepackage{fontspec}
+\defaultfontfeatures{ Scale=MatchLowercase,
+	Ligatures=TeX,
+	Renderer=HarfBuzz }
+\else
+\usepackage[bidi=default]{babel}
+\usepackage{fontspec}
+\defaultfontfeatures{ Scale=MatchLowercase,
+	Ligatures=TeX }
+\fi
+\babelprovide[import, onchar=ids fonts]{chinese-simplified}
+%\babelprovide[import, onchar=ids fonts]{chinese-traditional}
+\babelfont[chinese-simplified]{rm}
+{Noto Serif SC} % https://fonts.google.com/noto/specimen/Noto+Serif+SC
+\babelfont[chinese-simplified]{sf}
+{Noto Sans SC} % https://fonts.google.com/noto/specimen/Noto+Sans+SC
+%\babelfont[chinese-traditional]{rm}
+%{Noto Serif TC} % https://fonts.google.com/noto/specimen/Noto+Serif+TC
+%\babelfont[chinese-traditional]{sf}
+%{Noto Sans TC} % https://fonts.google.com/noto/specimen/Noto+Sans+TC
+%------------------------------------------------------------
+%                    End of Font Adaptation
+%------------------------------------------------------------
+\usepackage{tabu}
+% Provides easy color coding. e.g. {blue!80!black} means blue*0.8 + black*0.2
+\usepackage{xcolor}
+
+\name[陈世希]{陈世希\small{Ph.D. Candidate}}
+%\address{Hong Kong University of Science and Technology (HKUST)}
+\email{schenax@connect.ust.hk}
+\phone{+86-13530088664}
+\homepage{schenax.student.ust.hk}
+\github{szchenshixi}
+\linkedin{shixi-chen}
+%\linkedinId{95a31618b}
+
+
+\begin{document}
+
+\maketitle%
+
+%\section{Research \\ Interests}
+%
+%I am interested in Databases, Cryptography, Information Security and Privacy-Aware Computing. My current focuses include:
+%
+%\begin{itemize}
+%  \item Authenticated query processing for outsourcing cloud computing.
+%  \item Searchable blockchain with integrity assurance.
+%  \item Privacy preserving query processing and access control.
+%\end{itemize}
+
+\section{职业履历}
+
+\subsection{香港科技大学 (HKUST)}[]
+\begin{positions}
+  \entry{博士研究生}{2018年9月~--~现在}
+\end{positions}
+
+\begin{itemize}
+  \item 导师: \href{https://eexu.home.ece.ust.hk/}{须江教授}
+  \item 研究方向涉及多核计算架构，片上网络（NoC）以及软硬件一体化设计，主要工作内容包括高性能、低功耗设计和基于集成硅光的新型架构探索
+  \item 研究工作致力于为多核计算系统提供高能效的软硬件协同的解决方案，为之设计并验证了数个先进架构、控制模块及协议
+\end{itemize}
+
+\subsection{JADE}[]
+\begin{positions}
+  \entry{核心开发者}{2019年2月~--~现在}
+\end{positions}
+
+\begin{itemize}
+  \item \url{https://eexu.home.ece.ust.hk/JADE.html}
+  \item 负责开发与维护一款开源的大型多核系统仿真平台----JADE，并基于此项目展开多核计算架构的探索工作
+  \item 设计并实现了多个核心功能单，包括更好的仲裁器（arbitrator）, 内存架构（memory hierarchy）, optical power delivery systems和片上网络（NoC）。升级项目的构建工具并修复了许多bugs
+\end{itemize}
+
+\subsection{COSMIC}[]
+\begin{positions}
+	\entry{核心开发者}{2019年2月~--~现在}
+\end{positions}
+
+\begin{itemize}
+	\item \url{https://eexu.home.ece.ust.hk/COSMIC.html}
+	\item 负责开发与维护一套基于统计学模型的开源多核系统基准测试工具（benchmark suite）----COSMIC
+	\item 创建并长期维护了5套主流多核测试基准程序, 包括APEX, NAS, PARSEC, SPEC, Splash
+\end{itemize}
+
+\subsection{学术服务}[]
+\begin{positions}
+	\entry{Paper Reviewer}{2019年2月~--~现在}
+\end{positions}
+
+\begin{itemize}
+	\item 参与一众国际会议的论文评审工作，包括ASP-DAC, CODES+ISSS, ICPP, ISVLSI, MCSoC, DAC, NOCS, DATE, PHOTONICS
+	\item 参与顶级期刊的评审工作，包括TC, TVLSI, TCAD, TPDS
+\end{itemize}
+
+\section{教育经历}
+
+\subsection{香港科技大学（HKUST）}[]
+\vspace{-\parskip}%
+\begin{itemize}[label={}]
+	\item 电子与计算机工程（Electronic and Computer Engineering） 博士研究生 \printdate{2018年9月~--~现在}
+	\item 导师: \href{https://eexu.home.ece.ust.hk/}{须江教授}
+\end{itemize}
+
+\subsection{香港科技大学（HKUST）}[]
+\vspace{-\parskip}%
+\begin{itemize}[label={}]
+	\item Bachelor degree of Engineering, First Class Honor (最高荣誉学位)\printdate{ 2014年9月~--~2018年9月}
+	\begin{itemize}[label=\textbullet]
+      \item 第一主修为电子与计算机（Electronic and Computing Engineering）
+      \item 第二主修为计算机科学（Computer Science）
+	\end{itemize}
+\end{itemize}
+
+\section{职业技能}
+
+\begin{description}
+	
+%  \item[编程] C/C++, Python, Bash, CMake, GNU make, Matlab, Verilog, Java, \LaTeX
+  \item[编程]：
+  \begin{description}
+  	\item[精通] C/C++, Python, Bash, CMake, GNU make
+    \item[熟练] Matlab, Verilog, Java, \LaTeX
+    \item[基础] VHDL, SQL, HTML, JavaScript
+  \end{description}
+  \item[工具] Linux, Vim, Tmux, Git, SVN, Doxygen, Docker % GitBook
+  \item[语言] 地道普通话, 流利英语, 基础日语
+\end{description}
+
+\section{荣誉}
+
+%\item Admissions Scholarships (Fall, Winter 2014, Spring, Summer 2015)
+%\item University's Scholarship for outstanding academic performance (Fall 2016,
+%\item Dean's List (Fall, Spring 2015, Fall, Spring 2016, )
+
+\begin{itemize}
+%	\item Dean's List, HKUST \printdate{Fall, Spring 2015\\}
+%	\printdate{\hfill Fall, Spring 2016}
+%	\item University's Scholarship Scheme, HKUST \printdate{Fall, Winter, Spring, Summer 2014\\}
+%	\printdate{\hfill Fall, Winter, Spring, Summer 2016}
+%	\item Participant of EDA competition
+  \item Participant of EDAthon2020, CEDA \printdate{\hfill 2020}
+  \item Teaching Assistant Coordinator, HKUST \printdate{\hfill 2018}
+  \item Dean's List (共4学期), HKUST\printdate{\hfill 2015, 2016}
+  \item University's Scholarship Scheme (共8学期), HKUST\printdate{\hfill 2014~--~2018}
+\end{itemize}
+%
+%\section{Publications}%
+%
+%%\textbf{Complete List:}
+%%\href{https://scholar.google.com/citations?user=DKG_JaAAAAAJ}{Google Scholar \textsf{\footnotesize [DKG\_JaAAAAAJ]}}%
+%%{~~$\cdot$~~}%
+%%\href{https://dblp.org/pers/hd/x/Xu_0004:Cheng}{DBLP \textsf{\footnotesize [Xu\_0004:Cheng]}}%
+%
+%%\publications[keyword={selected}]{publications.bib}
+%
+%\begin{enumerate}
+%	\item Jun Feng, Jiaxu Zhang, \textbf{Shixi Chen}, Jiang Xu, ``Scalable Low-Power High-Performance Optical Network for Rack-Scale Computers``, Silicon Photonics for High-Performance Computing and Beyond, CRC 2022.
+%	\item  Fan Jiang, Rafael Kioji Vivas Maeda, Jun Feng, \textbf{Shixi Chen}, Lin Chen, Xiao Li, Jiang Xu, ``Fast and Accurate Statistical Simulation of Shared-Memory Applications on Multicore Systems,`` IEEE Transactions on Parallel and Distributed Systems, 2022.
+%	\item Yinyi Liu, Jiaxu Zhang, Jun Feng, \textbf{Shixi Chen}, Jiang Xu, ``A Reliability Concern on Photonic Neural Networks,`` Design, Automation and Test in Europe Conference and Exhibition (DATE), Antwerp, Belgium, March 2022
+%	\item Yinyi Liu, Jiaxu Zhang, Jun Feng, \textbf{Shixi Chen}, Jiang Xu, ``Reduce Footprints of Multiport Interferometers by Cosine-Sine-Decomposition Unfolding,`` Optical Fiber Communication Conference and Exhibition (OFC), San Diego, California, USA, March 2022
+%	\item Jiaxu Zhang, Yingyi Liu, Jun Feng, \textbf{Shixi Chen}, Xiaowen Dong, Wutong Yu, Jiang Xu, ``UONN: Energy-Efficient Optical Neural Network,`` Asia Communications and Photonics Conference (ACP), 2021
+%   \item \textbf{Shixi Chen}, Jiang Xu, Xuanqi Chen, Zhifei Wang, Jun Feng, Jiaxu Zhang, Zhongyuan Tian, Xiao Li, ``Efficient Optical Power Delivery System for Hybrid Electronic-Photonic Manycore Processors,`` Design, Automation and Test in Europe Conference and Exhibition (DATE), Grenoble, France, March 2020.
+%	\item Zhifei Wang, Jun Feng, Xuanqi Chen, Zhehui Wang, Jiaxu Zhang, \textbf{Shixi Chen}, Jiang Xu, Systematic Exploration of High-Radix Integrated Silicon Photonic Switches for Datacenters, IEEE/ACM International Conference on Computer Aided Design (ICCAD), Westminster CO, USA, November 2019.
+%	\item Jun Feng, Zhehui Wang, Zhifei Wang, Xuanqi Chen, \textbf{Shixi Chen}, Jiaxu Zhang, Jiang Xu, ``Scalable Low-Power High-Performance Rack-Scale Optical Network,`` PHOTONICS in SC19, Denver, Colorado, November 2019.
+%\end{enumerate}
+
+
+%{
+%\footnotesize %
+%\textsuperscript{\textdagger}These authors contributed equally.
+%}
+
+%\section{Academic Activities}
+%
+%\begin{enumerate}[label={}]
+%  \item \textbf{Conference Paper Reviewer}
+%  \begin{itemize}
+%  	% With dates
+%%	\item Asia and South Pacific Design Automation Conference (ASP-DAC) \printdate{2020, 2021}
+%%	\item International Conference on Hardware/Software Codesign and System
+%%	Synthesis (CODES+ISSS) \printdate{2019, 2020}
+%%	\item International Conference on Parallel Processing (ICPP) \printdate{2019}
+%%	\item Computer Society Annual Symposium on VLSI (ISVLSI) \printdate{2019}
+%%	\item International Symposium on Embedded Multicore/Many-core Systems-on-Chip (MCSoC) \printdate{2019}
+%%	\item Design Automation Conference (DAC) Ph.D. forum \printdate{2020}
+%%	\item IEEE/ACM International Symposium on Networks-on-Chip (NOCS) \printdate{2020, 2021}
+%%	\item Design, Automation and Test in Europe (DATE) \printdate{2020}
+%%	\item Optical/Photonic Interconnects for Computing Systems (PHOTONIC) \printdate{2019}
+%	% Without dates
+%	\item Asia and South Pacific Design Automation Conference (ASP-DAC)
+%	\item International Conference on Hardware/Software Codesign and System
+%	Synthesis (CODES+ISSS)
+%	\item International Conference on Parallel Processing (ICPP)
+%	\item Computer Society Annual Symposium on VLSI (ISVLSI)
+%	\item International Symposium on Embedded Multicore/Many-core Systems-on-Chip (MCSoC)
+%	\item Design Automation Conference (DAC) Ph.D. forum
+%	\item IEEE/ACM International Symposium on Networks-on-Chip (NOCS)
+%	\item Design, Automation and Test in Europe (DATE)
+%	\item Optical/Photonic Interconnects for Computing Systems (PHOTONIC)
+%  \end{itemize}
+%  \item \textbf{Journal Paper Reviewer}
+%  \begin{itemize}
+%  	\item IEEE Transactions on Computers (IEEE TC)
+%  	\item IEEE Transactions on Very Large Scale Integration Systems (TVLSI)
+%  	\item Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD)
+%  	\item IEEE Transactions on Parallel and Distributed Systems (TPDS)
+%  \end{itemize}
+%  \item \textbf{Teaching Assistant}
+%  \begin{itemize}
+%%    \item ELEC 2300 Computer Organization, HKUST \printdate{Fall 2019}
+%%    \item ELEC 4310 Embedded System Design, HKUST \printdate{Spring 2018}
+%    \item ELEC 2300 Computer Organization, HKUST \printdate{2019}
+%    \item ELEC 4310 Embedded System Design, HKUST \printdate{2018}
+%    \item Teaching Assistant Coordinator, Department of ECE, HKUST \printdate{2018}
+%  \end{itemize}
+%\end{enumerate}
+
+
+\end{document}
